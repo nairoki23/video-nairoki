@@ -1,11 +1,12 @@
-import { Box, Text } from "@kuma-ui/core";
+"use client";
+import dynamic from 'next/dynamic'
+import { Box } from "@kuma-ui/core";
+const NoSSR = dynamic(() => import('./player'), { ssr: false })
 export default function Home() {
   return (
     <main>
         <Box >
-            <Text fontSize={24} fontWeight={"bold"}>
-                nairoki動画
-            </Text>
+            <NoSSR/>
         </Box>
     </main>
   )
