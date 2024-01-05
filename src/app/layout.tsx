@@ -1,13 +1,16 @@
 import type {Metadata} from 'next'
 import {Box, Flex, Heading, VStack} from "@kuma-ui/core";
 import Link from 'next/link'
-
+import NavButton from "@/app/NavButton";
+import {MdFavorite, MdHistory} from "react-icons/md";
 function Header() {
   return (
-    <VStack marginX={"20px"} height={"100%"}>
+    <VStack padding={"18px"} height={"100%"} align={"center"} >
       <Link href="/">
-        <Heading fontSize={"24px"}>video.nairoki.dev</Heading>
+        <Heading textDecorationLine={"none"} textDecorationColor={"none"} fontSize={"24px"}>ないろき動画</Heading>
       </Link>
+      <NavButton title={"視聴履歴"} link={"/history"} Icon={MdHistory}/>
+      <NavButton title={"お気に入り"} link={"/favorite"} Icon={MdFavorite}/>
     </VStack>
   )
 }
