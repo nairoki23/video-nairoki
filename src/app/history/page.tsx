@@ -10,13 +10,13 @@ export default function History() {
     if(window==undefined){return}
     const history=read_store("history")
     const List_his:any[]=[]
-    history.forEach(function (value:any,index:any) {
+    history.forEach(function (value:any,index:any ) {
       const date=new Date(value["date_stamp"])
       List_his.push(<VideoCard key={index} video_id={value["video_id"]} date={date}/>)
     });
     History_set(List_his)
     return(()=>{History_set([<></>])})
-  },[window])
+  },[])
 
   return (
       <Box margin={"10px"}>
