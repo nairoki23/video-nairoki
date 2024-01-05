@@ -7,7 +7,7 @@ function Header() {
   return (
     <VStack padding={"18px"} height={"100%"} align={"center"} >
       <Link href="/">
-        <Heading textDecorationLine={"none"} textDecorationColor={"none"} fontSize={"24px"}>ないろき動画</Heading>
+        <Heading color={"black"} fontSize={"24px"}>ないろき動画</Heading>
       </Link>
       <NavButton title={"視聴履歴"} link={"/history"} Icon={MdHistory}/>
       <NavButton title={"お気に入り"} link={"/favorite"} Icon={MdFavorite}/>
