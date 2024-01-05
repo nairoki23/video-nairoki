@@ -5,7 +5,7 @@ import NavButton from "@/app/NavButton";
 import {MdFavorite, MdHistory} from "react-icons/md";
 function Header() {
   return (
-    <VStack padding={"18px"} height={"100%"} align={"center"} >
+    <VStack padding={"18px"} height={"100%"} >
       <Link href="/">
         <Heading color={"black"} fontSize={"24px"}>ないろき動画</Heading>
       </Link>
