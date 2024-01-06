@@ -9,6 +9,7 @@ export default async function Home({params}: { params: { video_id: string }; }) 
     <main>
       <Flex justify="center" alignItems="center" marginLeft={"20px"}>
         <NoSSR video_id={params["video_id"]}/>
+        <Box width={"14px"}/>
         <InfoCard video_id={params["video_id"]}/>
       </Flex>
     </main>
@@ -16,7 +17,6 @@ export default async function Home({params}: { params: { video_id: string }; }) 
   else{
     return(
         <h1>動画の読み込みに失敗しました</h1>
-
     )
   }
 }

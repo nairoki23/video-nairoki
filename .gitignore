@@ -35,7 +35,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /.yarn/*
+
+#配信する素材置き場
 /public/videos/*
 /public/video_info/*
+/public/thumbnail/*
 
 .pnp.cjs
