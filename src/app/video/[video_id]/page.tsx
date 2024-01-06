@@ -9,7 +9,7 @@ export default async function Home({params}: { params: { video_id: string }; }) 
     <main>
       <Flex justify="center" alignItems="center" marginLeft={"20px"}>
         <NoSSR video_id={params["video_id"]}/>
-        <Box width={"14px"}/>
+        <Box width={"24px"}/>
         <InfoCard video_id={params["video_id"]}/>
       </Flex>
     </main>
